@@ -1,0 +1,129 @@
+/* Enable smooth scrolling for entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url('../Images/chinese-poetry.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    color: black; 
+    text-align: center;
+    padding: 60px 20px; 
+    background-attachment: fixed; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #C7BCA8;
+    margin: 0; 
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em; 
+    margin: 0;
+}
+ 
+h2 {
+    font-size: 1.8em;
+    color:  #000000;
+}
+
+
+.toc-container{
+    padding: 20px;
+    margin: 20px auto; 
+    max-width: 500px;
+    text-align:center;
+    border-style: solid;
+    background-color:#D5C9B2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toc {
+    list-style-type: disc; /*default bullet points*/
+    list-style-position: inside;
+    text-align:left;
+    margin: 0;
+}
+
+.toc a {
+    text-decoration: none; /* Remove the underline from the links */
+    color: blue; 
+    display: inline-block; /* Make sure the entire text is clickable */
+    padding: 5px 10px;
+    transition: color 0.3s ease; /* Smooth transition when color changes */
+    cursor: pointer; 
+}
+
+.toc a:hover{
+    color:darkblue;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;/*stay in the same position*/
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white; 
+    border: none;
+    border-radius: 50%; 
+    padding: 15px; 
+    font-size: 24px; 
+    cursor: pointer;
+    display: none; /* Initially hidden by default*/
+    z-index: 100; 
+}
+
+#scrollToTopBtn:hover {
+    background-color: #45a049; 
+}
+
+section {
+    padding: 20px;
+    margin:20px auto;
+    max-width: 900px;
+    background-color: #D5C9B2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.poem-text p, .poem-translation p, .table p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /*collapse all the text borders into a single border*/
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 200px; /* First column */
+}
+
+th:nth-child(2){
+    text-align: center; 
+}
+
+td {
+    font-size: 1.1em;
+}
