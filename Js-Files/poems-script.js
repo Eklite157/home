@@ -18,7 +18,3 @@ mybutton.onclick = function() {
     });
     return false; // Prevent default anchor behavior
 };
-
-/*To prevent the default "jump to top" behavior, we use JavaScript with return false; 
-in the onclick handler. This stops the browser from following the link (href="#"), and instead, 
-it triggers the smooth scrolling action.*/
