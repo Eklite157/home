@@ -6,7 +6,7 @@ header {
     text-align: center;
     padding: 50px 20px; /* Add padding to make the header taller */
     background-attachment: fixed; /* Fixes the background image when scrolling */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 8px rgba(54, 44, 44, 0.3); 
 }
 
 header h1{
@@ -28,14 +28,45 @@ body {
     margin-bottom: 300px; 
 }
 
-.title-image {
-    width:100%;
-    height:auto;
-    object-fit:cover;
-    margin-bottom:30px;
+
+/* Container for the opening image */
+.softskills {
+    width: 100%;
+    min-height: 900px; 
+    height: auto; 
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: center; /* Horizontally center text */
+    align-items: center; /* Vertically center text */
+    overflow: hidden; /* Prevents text overflow */
 }
 
-/* all-images is a wrapper that contains all .item-container which we can use*/
+/* Image styling */
+.title-image {
+    position: absolute;
+    width: 100%;
+    height: auto;  /* Ensures image fills the container */
+    object-fit: cover;  /* Ensures the image covers the full container without distortion */
+}
+
+/* 'About Me' text overlay */
+.overlay-text {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    max-width: 80%; 
+    width: auto; 
+}
+
+/* 'About Me' text overlay */
+.hobbies h1{
+    font-size: 2em;
+    margin-left: 30px;
+}
+
+/*Formatting for all the interest boxes*/
 .all-images{
     display: flex; 
     flex-wrap: wrap; 
@@ -43,17 +74,17 @@ body {
     justify-content: center; 
 }
 
-/*targets last (the fifth item)*/
+/*Targets last (the fifth item)*/
 .item-container:nth-last-child(1) {
     margin-left:20px;
 }
 
-/*targets second to last (the fourth item)*/
+/*Targets second to last (the fourth item)*/
  .item-container:nth-last-child(2){ 
     margin-right: 15px;  
 }
 
-
+/* Styling each interest box*/
 .item-container{
     margin: 20px auto; 
     width: 500px;
@@ -71,10 +102,10 @@ body {
     transition: transform 0.4s ease;
 }
 
-.hobby-image {
 
-    width:100%;/* Ensure the image fills the full width of the container */
-    height:100%;/* Make image fill the remaining space */
+.hobby-image {
+    width:100%;
+    height:100%;
     object-fit:cover; /* Ensure the image is resized correctly */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -94,6 +125,7 @@ body {
     margin:0;
 }
 
+/* Styling for the dropdown menu upon clicking */
 .dropdown-container{
     display: none; /* Initially hidden */
     padding: 20px;
