@@ -33,7 +33,6 @@ body {
 .softskills {
     width: 100%;
     min-height: 900px; 
-    height: auto; 
     margin-bottom: 20px;
     display: flex; 
     justify-content: center; /* Horizontally center text */
@@ -45,8 +44,8 @@ body {
 .title-image {
     position: absolute;
     width: 100%;
-    height: auto;  /* Ensures image fills the container */
-    object-fit: cover;  /* Ensures the image covers the full container without distortion */
+    height: auto; 
+    object-fit: cover; 
 }
 
 /* 'About Me' text overlay */
@@ -60,9 +59,10 @@ body {
     width: auto; 
 }
 
-/* 'About Me' text overlay */
-.hobbies h1{
+.hobby-title h1{
+    position: relative;
     font-size: 2em;
+    padding:30px;
     margin-left: 30px;
 }
 
