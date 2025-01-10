@@ -8,6 +8,7 @@ header {
     background-attachment: fixed; /* Fixes the background image when scrolling */
     box-shadow: 0 4px 8px rgba(54, 44, 44, 0.3); 
     position: relative;
+    z-index: 2;
 }
 
 header h1{
@@ -47,6 +48,7 @@ body {
     width: 100%;
     height: auto; 
     object-fit: cover; 
+    z-index: 1;
 }
 
 /* 'About Me' text overlay */
@@ -58,6 +60,7 @@ body {
     font-size: 20px;
     max-width: 80%; 
     width: auto; 
+    z-index: 2;
 }
 
 .hobby-title h1{
