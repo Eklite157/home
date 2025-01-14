@@ -1,12 +1,9 @@
-
 header {
     background-color: #ABC5AA; 
     background-size: cover; /* Makes sure the image covers the entire header area */
     background-position: center center; 
     text-align: center;
-    width: 100%;
-    min-height: 300px;
-    padding: 100px 50px; /* Add padding to make the header taller */
+    padding: 50px 20px; /* Add padding to make the header taller */
     background-attachment: fixed; /* Fixes the background image when scrolling */
     box-shadow: 0 4px 8px rgba(54, 44, 44, 0.3); 
     position: relative;
@@ -26,33 +23,30 @@ body {
     background-color: #cbb4a3;
     background-image: url('../Images/green\ background.jpg');
     background-size: contain;
+    margin: 0; 
     padding: 0;
     color: #333;
-    margin-right: 20px;
     margin-bottom: 300px; 
 }
 
 
 /* Container for the opening image */
 .softskills {
-    width: 100%;                
-    min-height: 900px;          
-    margin: 0;                 
-    padding: 0;               
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    box-sizing: border-box; 
-    position: relative;
+    width: 100%;
+    min-height: 900px; 
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: center; /* Horizontally center text */
+    align-items: center; /* Vertically center text */
+    overflow: hidden; /* Prevents text overflow */
 }
 
 /* Image styling */
 .title-image {
+    position: absolute;
     width: 100%;
     height: auto; 
     object-fit: cover; 
-    box-sizing: border-box
     z-index: 1;
 }
 
@@ -79,10 +73,18 @@ body {
 .all-images{
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: space-evenly;
-    gap: 20px;
+    gap: 60px 20px; /* Vertical (gap between columns) and horizontal (gap between rows) */
+    justify-content: center; 
 }
 
+/*Targets last (the fifth item)*/
+.item-container:nth-last-child(1) {
+    margin-left:20px;
+}
+/*Targets second to last (the fourth item)*/
+ .item-container:nth-last-child(2){ 
+    margin-right: 15px;  
+}
 /* Styling each interest box*/
 .item-container{
     margin: 20px auto; 
@@ -93,7 +95,6 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align:center;
     cursor: pointer;
-    box-sizing: border-box;
 }
 
 .item-container:hover {
