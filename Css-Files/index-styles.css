@@ -78,10 +78,6 @@ body {
     justify-content: space-evenly; 
 }
 
-/*Targets last (the fifth item)*/
-.item-container:nth-last-child(1) {
-    margin-left:20px;
-}
 
 /* Styling each interest box*/
 .item-container{
