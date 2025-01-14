@@ -18,11 +18,6 @@ document.getElementById("violin").addEventListener("click", function() {
     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 });
 
-document.getElementById("ib").addEventListener("click", function() {
-    const dropdown = document.getElementById("ib-text");
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-});
-
 document.getElementById("cs").addEventListener("click", function() {
     const dropdown = document.getElementById("cs-text");
     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
