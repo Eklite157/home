@@ -4,8 +4,9 @@ header {
     background-size: cover; /* Makes sure the image covers the entire header area */
     background-position: center center; 
     text-align: center;
-    width: 100%
-    padding: 50px 20px; /* Add padding to make the header taller */
+    width: 100%;
+    min-height: 300px;
+    padding: 100px 50px; /* Add padding to make the header taller */
     background-attachment: fixed; /* Fixes the background image when scrolling */
     box-shadow: 0 4px 8px rgba(54, 44, 44, 0.3); 
     position: relative;
