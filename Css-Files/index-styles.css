@@ -73,19 +73,9 @@ body {
 .all-images{
     display: flex; 
     flex-wrap: wrap; 
-    gap: 60px 20px; /* Vertical (gap between columns) and horizontal (gap between rows) */
-    justify-content: center; 
+    justify-content: space-evenly; 
 }
 
-/*Targets last (the fifth item)*/
-.item-container:nth-last-child(1) {
-    margin-left:20px;
-}
-
-/*Targets second to last (the fourth item)*/
- .item-container:nth-last-child(2){ 
-    margin-right: 15px;  
-}
 
 /* Styling each interest box*/
 .item-container{
