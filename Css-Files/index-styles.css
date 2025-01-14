@@ -35,13 +35,16 @@ body {
 
 /* Container for the opening image */
 .softskills {
-    width: 100%;
-    min-height: 900px; 
-    margin-bottom: 20px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; /* Vertically center text */
-    overflow: hidden; /* Prevents text overflow */
+    width: 100%;                
+    min-height: 900px;          
+    margin: 0;                 
+    padding: 0;               
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box; 
+    position: relative;
 }
 
 /* Image styling */
