@@ -73,13 +73,19 @@ body {
 .all-images{
     display: flex; 
     flex-wrap: wrap; 
+    gap: 60px 20px; /* Vertical (gap between columns) and horizontal (gap between rows) */
     justify-content: center; 
+    justify-content: space-evenly; 
 }
 
+/*Targets last (the fifth item)*/
+.item-container:nth-last-child(1) {
+    margin-left:20px;
+}
 
 /* Styling each interest box*/
 .item-container{
-    margin: 20px; 
+    margin: 20px auto; 
     width: 350px;
     height:280px;
     background-color: #f0dfc3;
